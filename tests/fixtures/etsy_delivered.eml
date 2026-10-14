@@ -1,0 +1,36 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@account.etsy.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@account.etsy.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@account.etsy.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@account.etsy.com; dmarc=pass (p=REJECT sp=REJECT
+ dis=NONE) header.from=account.etsy.com
+Date: Fri, 09 Oct 2026 14:00:16 +0000
+From: Etsy <no-reply@account.etsy.com>
+To: jane.doe@example.com
+Message-ID: <b4da64ee8e5e360c.bfcce89d2352@account.etsy.com>
+Subject: It's here! Your order from Maple Leaf Prints has been delivered.
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Jane Doe,
+get excited to open your delivery from
+Maple Leaf Prints
+
+Etsy
+
+Your delivery is here!
+
+Order
+#4102938475
+
+Botanical Print Set, 8x10
+
+Delivered to
+123 Main St. Springfield
+
+Was everything okay with your order? Let the shop know by leaving a review.
+
+Etsy, Inc.
+117 Adams Street, Brooklyn, NY 11201

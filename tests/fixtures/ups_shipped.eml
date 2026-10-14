@@ -1,0 +1,35 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@ups.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@ups.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@ups.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@ups.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE)
+ header.from=ups.com
+Date: Thu, 08 Oct 2026 21:20:05 -0400
+From: UPS My Choice <mcinfo@ups.com>
+To: jane.doe@example.com
+Message-ID: <1eba54640e5bb8b1.d8f7a05af068@ups.com>
+Subject: UPS Update: Package Scheduled for Delivery Tomorrow
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Jane, your package is scheduled for delivery tomorrow.
+
+Estimated Delivery Date: Friday, 10/09/2026
+Estimated Delivery Time: 02:00 PM - 06:00 PM
+
+Northwind Traders
+Tracking Number: 1ZA81F270312345675
+http://www.ups.com/WebTracking/processInputRequest?loc=3Den_US&Requester=3DDA=
+N&tracknum=3D1ZA81F270312345675&AgreeToTermsAndConditions=3Dyes
+UPS Service: UPS Ground
+Number of Packages: 1
+
+Delivery Location:
+123 MAIN ST
+SPRINGFIELD, IL 62701
+US
+
+(C) 2026 United Parcel Service of America, Inc. All rights reserved.
+Please do not reply directly to this email.

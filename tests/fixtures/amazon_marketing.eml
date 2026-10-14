@@ -1,0 +1,60 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@amazon.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@amazon.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@amazon.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@amazon.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE)
+ header.from=amazon.com
+Date: Wed, 07 Oct 2026 16:00:00 +0000
+From: "Amazon.com" <store-news@amazon.com>
+To: jane.doe@example.com
+Message-ID: <fa47ef64764ca7f2.928d2611091e@amazon.com>
+Subject: Deals on kitchen items you might like
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="----=_Part_2165390_118842076.1791388800310"
+
+------=_Part_2165390_118842076.1791388800310
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Jane, we found some deals for you.
+
+Cast Iron Skillet
+$24.99
+
+Chef's Knife
+$39.99
+
+Shop now: https://www.amazon.com/deals?ref_=3Dpe_deals
+
+=C2=A92026 Amazon.com, Inc. or its affiliates. Amazon and all related marks a=
+re trademarks of Amazon.com, Inc. or its affiliates, Amazon.com, Inc. 410 Ter=
+ry Avenue N., Seattle, WA 98109.
+
+------=_Part_2165390_118842076.1791388800310
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Amazon.com</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<h2>Jane, we found some deals for you.</h2>
+<table><tr><td>Cast Iron Skillet</td><td>$24.99</td></tr>
+<tr><td>Chef's Knife</td><td>$39.99</td></tr></table>
+<p><a href=3D"https://www.amazon.com/deals?ref_=3Dpe_deals">Shop now</a></p>
+<p>=C2=A92026 Amazon.com, Inc. or its affiliates. Amazon and all related mark=
+s are trademarks of Amazon.com, Inc. or its affiliates, Amazon.com, Inc. 410 =
+Terry Avenue N., Seattle, WA 98109.</p>
+
+</body>
+</html>
+
+------=_Part_2165390_118842076.1791388800310--

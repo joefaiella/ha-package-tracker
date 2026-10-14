@@ -1,0 +1,42 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@tracking.usps.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@tracking.usps.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@tracking.usps.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@tracking.usps.com; dmarc=pass (p=REJECT sp=REJECT
+ dis=NONE) header.from=tracking.usps.com
+Date: Thu, 08 Oct 2026 17:22:40 +0000
+From: USPS Tracking <auto-reply@tracking.usps.com>
+To: jane.doe@example.com
+Message-ID: <10717a341d7547df.0322c086ed9f@tracking.usps.com>
+Subject: =?utf-8?q?USPS=C2=AE?= Delivery Attempt: Action Needed
+ 9400111899223300835914
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>USPS Tracking</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</style>
+</head>
+<body>
+<table role="presentation" width="100%">
+<tr><td><p>Hello ,</p>
+</td></tr>
+<tr><td><p>We attempted to deliver your item at 12:22 pm on October 8, 2026 in SPRINGFIELD, IL 62701 and a notice was left because an authorized recipient was not available.</p>
+</td></tr>
+<tr><td><p>Tracking Number: 9400111899223300835914</p>
+</td></tr>
+<tr><td><h3>Delivery Attempted</h3>
+</td></tr>
+</table>
+<p>Visit <a href="https://tools.usps.com/go/TrackConfirmAction">USPS Tracking®</a> to check the most up-to-date status of your package.</p>
+<p>This is an automated email; please do not reply to this message.</p>
+<p>Copyright ©2026 USPS. All Rights Reserved.</p>
+<p>475 L'Enfant Plaza SW, Washington, DC 20260</p>
+
+</body>
+</html>

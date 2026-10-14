@@ -1,0 +1,67 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@fedex.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@fedex.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@fedex.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@fedex.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE)
+ header.from=fedex.com
+Date: Fri, 09 Oct 2026 08:17:42 -0500
+From: FedEx Delivery Manager <TrackingUpdates@fedex.com>
+To: jane.doe@example.com
+Message-ID: <eb92c31093544daf.fc28b92da2a3@fedex.com>
+Subject: Your shipment is out for delivery today 771055230496
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="----=_Part_80213_1460930212.1791551862455"
+
+------=_Part_80213_1460930212.1791551862455
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FedEx</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</style>
+</head>
+<body>
+<table role="presentation" width="100%">
+<tr><td>Your shipment from Northwind Traders is scheduled to arrive today.</td></tr>
+<tr><td>Hi, Jane Doe.</td></tr>
+<tr><td>Your shipment from Northwind Traders is out for delivery today.</td></tr>
+<tr><td>Scheduled delivery</td></tr>
+<tr><td>Estimated between 2:00pm and 6:00pm</td></tr>
+<tr><td><a href="https://www.fedex.com/en-us/delivery-manager.html">MANAGE DELIVERY</a></td></tr>
+<tr><td>Tracking details</td></tr>
+<tr><td>Tracking ID</td></tr>
+<tr><td><a href="https://www.fedex.com/fedextrack/?trknbr=771055230496">771055230496</a></td></tr>
+<tr><td>From</td></tr>
+<tr><td>Northwind Traders</td></tr>
+<tr><td>Northwind Traders</td></tr>
+<tr><td>4100 Commerce Pkwy</td></tr>
+<tr><td>Peoria, IL, US</td></tr>
+<tr><td>61602</td></tr>
+<tr><td>To</td></tr>
+<tr><td>Jane Doe</td></tr>
+<tr><td>Jane Doe</td></tr>
+<tr><td>123 Main St</td></tr>
+<tr><td>Springfield, IL, US</td></tr>
+<tr><td>62701</td></tr>
+<tr><td>Ship date</td></tr>
+<tr><td>Tue 10/06/2026 12:00 AM</td></tr>
+<tr><td>Number of pieces</td></tr>
+<tr><td>1</td></tr>
+<tr><td>Total shipment weight</td></tr>
+<tr><td>3.40 LB</td></tr>
+<tr><td>Service</td></tr>
+<tr><td>FedEx Home Delivery</td></tr>
+</table>
+<p>Please do not reply to this message. This email was sent from an unattended mailbox.</p>
+<p>All weights are estimated.</p>
+<p>© 2026 FedEx. All rights reserved.</p>
+
+</body>
+</html>
+
+------=_Part_80213_1460930212.1791551862455--

@@ -1,0 +1,55 @@
+name: Bug report
+description: Something isn't working as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Please remove personal details (addresses, tracking and order numbers, email addresses)
+        from anything you paste below.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: sender
+    attributes:
+      label: Which emails are involved?
+      options:
+        - Amazon
+        - USPS
+        - USPS Informed Delivery
+        - UPS
+        - FedEx
+        - Walmart
+        - Etsy
+        - Shopify store
+        - Other store
+        - Not related to a specific sender
+    validations:
+      required: true
+  - type: input
+    id: ha_version
+    attributes:
+      label: Home Assistant version
+      placeholder: "2026.10.0"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package Tracker version
+      placeholder: "0.3.0"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Debug log
+      description: >
+        Enable debug logging for custom_components.package_tracker, reproduce the problem, and
+        paste the relevant lines.
+      render: text

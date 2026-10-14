@@ -1,0 +1,47 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@acme-outdoor.example>
+Authentication-Results: mx.google.com; dkim=pass
+ header.i=@acme-outdoor.example header.s=s2048 header.b=Q2xvdWQx; spf=pass
+ (google.com: domain of bounces@acme-outdoor.example designates 203.0.113.25
+ as permitted sender) smtp.mailfrom=bounces@acme-outdoor.example; dmarc=pass
+ (p=REJECT sp=REJECT dis=NONE) header.from=acme-outdoor.example
+Date: Fri, 09 Oct 2026 13:00:00 +0000
+From: Acme Outdoor <news@acme-outdoor.example>
+To: jane.doe@example.com
+Message-ID: <345de7cccc7d56dc.67fcf181c977@acme-outdoor.example>
+Subject: Fall sale: 40% off tents this weekend
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============6459301428834935498=="
+
+--===============6459301428834935498==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Our biggest tent sale of the year starts now. Free shipping on orders over $5=
+0.
+
+Shop now: https://acme-outdoor.example/sale
+
+--===============6459301428834935498==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Acme Outdoor</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<h1>Fall sale: 40% off tents</h1>
+<p>Free shipping on orders over $50.</p>
+<p><a href=3D"https://acme-outdoor.example/sale">Shop now</a></p>
+
+</body>
+</html>
+
+--===============6459301428834935498==--

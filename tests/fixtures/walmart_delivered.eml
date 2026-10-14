@@ -1,0 +1,36 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@walmart.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@walmart.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@walmart.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@walmart.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE)
+ header.from=walmart.com
+Date: Thu, 08 Oct 2026 22:30:00 +0000
+From: "Walmart.com" <help@walmart.com>
+To: jane.doe@example.com
+Message-ID: <11f968b471749f03.e14f88b31071@walmart.com>
+Subject: Delivered: Coffee Maker and 1 other item
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Walmart.com</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<table role=3D"presentation" width=3D"100%">
+<tr><td><h1>Your order was delivered, Jane!</h1></td></tr>
+<tr><td>Your driver completed your delivery at 5:24pm on Thu, Oct 8.</td></tr>
+<tr><td>Here's a photo of where your order was left</td></tr>
+<tr><td>Order date: Mon, Oct 5, 2026</td></tr>
+<tr><td>Order #2000456-71234567</td></tr>
+</table>
+<p>=C2=A9 2026 Walmart. All Rights Reserved.</p>
+
+</body>
+</html>

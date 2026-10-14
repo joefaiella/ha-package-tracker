@@ -1,0 +1,113 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@email.informeddelivery.usps.com>
+Authentication-Results: mx.google.com; dkim=pass
+ header.i=@email.informeddelivery.usps.com header.s=s2048 header.b=Q2xvdWQx;
+ spf=pass (google.com: domain of bounces@email.informeddelivery.usps.com
+ designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@email.informeddelivery.usps.com; dmarc=pass (p=REJECT
+ sp=REJECT dis=NONE) header.from=email.informeddelivery.usps.com
+Date: Fri, 09 Oct 2026 12:31:05 +0000
+From:
+ USPS Informed Delivery <USPSInformeddelivery@email.informeddelivery.usps.com>
+To: jane.doe@example.com
+Message-ID: <40c168a62864dda8.046f1fff4771@email.informeddelivery.usps.com>
+Subject: Your Daily Digest for Fri, 10/9 is ready to view
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="b1_6d0c3f1e2a4b4c5d9e8f7a6b5c4d3e2f"
+
+--b1_6d0c3f1e2a4b4c5d9e8f7a6b5c4d3e2f
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi, Jane!
+
+You have 3 mailpiece(s) and 4 inbound package(s) arriving soon.
+
+To view your Daily Digest, please enable HTML in your email client or visit h=
+ttps://informeddelivery.usps.com/box/pages/secure/DashboardAction_input
+
+--b1_6d0c3f1e2a4b4c5d9e8f7a6b5c4d3e2f
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>USPS Informed Delivery</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<h2 id=3D"userDeskGreet">Hi<span id=3D"userNameDesk">, Jane</span>!</h2>
+<p>You have <span id=3D"total-mailpieces">3</span> mailpiece(s) and <span id=
+=3D"total-packages">4</span> inbound package(s) arriving soon.</p>
+<h2 id=3D"date-day">Friday</h2>
+<h3>COMING TO YOUR MAILBOX SOON</h3>
+<p><img id=3D"mailpiece-image-src-id" src=3D"cid:mailpiece-1.jpg" alt=3D"Scan=
+ned image of your mail piece" width=3D"460"></p>
+<p><img id=3D"mailpiece-image-src-id" src=3D"cid:mailpiece-2.jpg" alt=3D"Scan=
+ned image of your mail piece" width=3D"460"></p>
+<p><img id=3D"mailpiece-image-src-id" src=3D"cid:mailpiece-3.jpg" alt=3D"Scan=
+ned image of your mail piece" width=3D"460"></p>
+<div id=3D"today-package-div">
+<h3>Expected Today</h3>
+<table role=3D"presentation" class=3D"package" width=3D"100%"><tr><td>
+<p class=3D"from">FROM: NORTHWIND BOOKS</p>
+<p><a href=3D"https://informeddelivery.usps.com/box/pages/secure/packageDashb=
+oardAction?selectedTrckNum=3D9400111899223300517209&amp;selectedTypeOfLabel=
+=3DPackage"><span style=3D"white-space:nowrap" id=3D"pra-tracking-number-id">=
+ 9400111899223300517209</span></a></p>
+<p id=3D"pra-expected-delivery-date">Expected Delivery: Friday, 10/09</p>
+</td></tr></table>
+<table role=3D"presentation" class=3D"package" width=3D"100%"><tr><td>
+<p class=3D"from">FROM: BLUE HERON SUPPLY</p>
+<p><a href=3D"https://informeddelivery.usps.com/box/pages/secure/packageDashb=
+oardAction?selectedTrckNum=3D9400111899223300772066&amp;selectedTypeOfLabel=
+=3DPackage"><span style=3D"white-space:nowrap" id=3D"pra-tracking-number-id">=
+ 9400111899223300772066</span></a></p>
+<p id=3D"pra-expected-delivery-date">Expected Delivery: Friday, 10/09</p>
+</td></tr></table>
+</div>
+<div id=3D"soon-package-div">
+<h3>Expected Soon</h3>
+<table role=3D"presentation" class=3D"package" width=3D"100%"><tr><td>
+<p class=3D"from">FROM: CEDAR LANE PHARMACY</p>
+<p><a href=3D"https://informeddelivery.usps.com/box/pages/secure/packageDashb=
+oardAction?selectedTrckNum=3D9400111899223300835914&amp;selectedTypeOfLabel=
+=3DPackage"><span style=3D"white-space:nowrap" id=3D"pra-tracking-number-id">=
+ 9400111899223300835914</span></a></p>
+<p id=3D"pra-expected-delivery-date">Expected Delivery: Saturday, 10/10</p>
+</td></tr></table>
+</div>
+<div id=3D"awaiting-sender-package-div">
+<h3>Awaiting From Sender</h3>
+<table role=3D"presentation" class=3D"package" width=3D"100%"><tr><td>
+<p class=3D"from">FROM: RIVERSIDE OUTFITTERS</p>
+<p><a href=3D"https://informeddelivery.usps.com/box/pages/secure/packageDashb=
+oardAction?selectedTrckNum=3D9400111899223300926131&amp;selectedTypeOfLabel=
+=3DPackage"><span style=3D"white-space:nowrap" id=3D"pra-tracking-number-id">=
+ 9400111899223300926131</span></a></p>
+<p id=3D"pra-expected-delivery-date">Label created, not yet in system</p>
+</td></tr></table>
+</div>
+<div id=3D"outbound-package-div">
+<h3>Outbound</h3>
+<table role=3D"presentation" class=3D"package" width=3D"100%"><tr><td>
+<p class=3D"from">FROM: JANE DOE</p>
+<p><a href=3D"https://informeddelivery.usps.com/box/pages/secure/packageDashb=
+oardAction?selectedTrckNum=3D9400111899223301090428&amp;selectedTypeOfLabel=
+=3DPackage"><span style=3D"white-space:nowrap" id=3D"pra-tracking-number-id">=
+ 9400111899223301090428</span></a></p>
+<p id=3D"pra-expected-delivery-date">In transit</p>
+</td></tr></table>
+</div>
+<p>Informed Delivery=C2=AE notifications are for informational purposes only.=
+</p>
+
+</body>
+</html>
+
+--b1_6d0c3f1e2a4b4c5d9e8f7a6b5c4d3e2f--

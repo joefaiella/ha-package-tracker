@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <mask id="badge-cut">
+      <rect width="512" height="512" fill="#fff"/>
+      <circle cx="392" cy="392" r="116" fill="#000"/>
+    </mask>
+  </defs>
+  <g mask="url(#badge-cut)" stroke-linejoin="round">
+    <path d="M256 36 476 146 256 256 36 146Z" fill="#E0B07A"/>
+    <path d="M36 146 256 256V476L36 366Z" fill="#C48A4F"/>
+    <path d="M256 256 476 146V366L256 476Z" fill="#A36D3A"/>
+    <path d="M118 105 170 79 390 189 338 215Z" fill="#F3D6AE"/>
+    <path d="M338 215 390 189V409L338 435Z" fill="#D9B788"/>
+  </g>
+  <circle cx="392" cy="392" r="96" fill="#03A9F4"/>
+  <rect x="336" y="352" width="112" height="80" rx="12" fill="#fff"/>
+  <path d="M346 364 392 398 438 364" fill="none" stroke="#03A9F4" stroke-width="12"
+    stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Gmail",
+        "description": "Use a Gmail app password, not your normal Google password. Create one on the App passwords page of your Google account (it needs 2-Step Verification). The tracker reads the sender and subject of new emails, opens only the ones that look like shipping mail, and never marks anything as read.",
+        "data": {
+          "email": "Gmail address",
+          "password": "App password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "New app password needed",
+        "description": "Gmail stopped accepting the app password for {email} (this happens when the Google password changes). Create a new app password and enter it here.",
+        "data": {
+          "password": "App password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Gmail didn't accept that address and app password.",
+      "cannot_connect": "Couldn't reach Gmail. Check the internet connection and try again.",
+      "not_gmail": "That account doesn't look like Gmail (no All Mail folder).",
+      "unknown": "Something unexpected went wrong; check the Home Assistant log."
+    },
+    "abort": {
+      "already_configured": "This Gmail account is already being tracked.",
+      "reauth_successful": "The new app password works."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Package tracker options",
+        "data": {
+          "scan_minutes": "Check Gmail every",
+          "lookback_days": "Look back on first check",
+          "keep_delivered_days": "Keep delivered packages for",
+          "addresses": "Delivery address",
+          "show_unknown_address": "Show packages when the email doesn't say where they're going",
+          "informed_delivery_is_mine": "Always show packages from USPS Informed Delivery"
+        },
+        "data_description": {
+          "scan_minutes": "How often to look for new shipping emails.",
+          "lookback_days": "How far back the first check reads. Gmail keeps deleted mail in Trash for 30 days.",
+          "keep_delivered_days": "How long a delivered package is remembered. The card and sensors show a delivery only on its day, but the voice assistant can still answer about it, and \"probably delivered\" to-do items stay ticked, for this long.",
+          "addresses": "Only show packages going to these addresses. Useful if you share a store account with other households; leave it empty to show every package in your email.\n\nType each address the usual way, for example **123 Main St, Springfield, IL 62701**, or just a town (**Springfield, IL**) or a name. Amazon emails only show the first name and town, so Amazon packages are matched by town; if another household on the account lives in the same town, put your name in front of your full address: **Jane Doe, 123 Main St, Springfield, IL 62701**.",
+          "show_unknown_address": "Many carrier emails (most USPS and UPS updates) don't say where a package is going. On: those packages show. Off: they stay hidden until an email shows they're coming to one of your addresses.",
+          "informed_delivery_is_mine": "USPS Informed Delivery only lists packages coming to your own address, so show them even if no other email says where they're going."
+        }
+      }
+    },
+    "error": {
+      "address_too_short": "\"{entry}\" is too short and would match almost every package. Use a town, a ZIP code or a full address.",
+      "address_too_long": "\"{entry}\" is too long for an address.",
+      "address_needs_commas": "Can't tell where the street ends and the town starts in \"{entry}\". Put commas between them, for example 123 Main St, Springfield, IL 62701.",
+      "too_many_addresses": "Add at most {entry} addresses."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "arriving_today": { "name": "Arriving today" },
+      "out_for_delivery": { "name": "Out for delivery" },
+      "on_the_way": { "name": "On the way" },
+      "delivered_today": { "name": "Delivered today" },
+      "ordered": { "name": "Ordered" },
+      "mail_today": { "name": "Mail today" },
+      "last_check": { "name": "Last email check" }
+    },
+    "todo": {
+      "packages": { "name": "Packages" }
+    }
+  }
+}

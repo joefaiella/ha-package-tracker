@@ -1,0 +1,104 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@amazon.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@amazon.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@amazon.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@amazon.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE)
+ header.from=amazon.com
+Date: Tue, 06 Oct 2026 15:20:41 +0000
+From: "Amazon.com" <shipment-tracking@amazon.com>
+To: jane.doe@example.com
+Message-ID: <290ce120f12bc336.7cb06b4aa760@amazon.com>
+Subject: Delay in shipping your order =?utf-8?q?=E2=80=8E=23116-2058813-4471?=
+ =?utf-8?q?920=E2=80=8E?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="----=_Part_2075529_143360981.1791300041204"
+
+------=_Part_2075529_143360981.1791300041204
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Your Orders
+https://www.amazon.com/gp/css/order-history?ref_=3Dfed_yo_default
+
+Your Account
+https://www.amazon.com/your-account?ref_=3Dfed_ya_default
+
+Buy Again
+https://www.amazon.com/gp/buyagain?ref_=3Dfed_bia_default
+
+
+    Jane, there's a delay with your order.
+
+We're sorry. The item below is taking longer to ship than expected.
+
+
+
+Jane - SPRINGFIELD, IL
+
+Order #
+116-2058813-4471920
+
+
+
+View or edit order
+https://www.amazon.com/your-orders/order-details?orderID=3D116-2058813-447192=
+0&ref_=3Dp_btn_fed_veo
+
+* Wireless Mouse
+
+We'll email you when it ships.
+
+
+=C2=A92026 Amazon.com, Inc. or its affiliates. Amazon and all related marks a=
+re trademarks of Amazon.com, Inc. or its affiliates, Amazon.com, Inc. 410 Ter=
+ry Avenue N., Seattle, WA 98109.
+
+Privacy Notice https://www.amazon.com/gp/help/customer/display.html?nodeId=3D=
+468496
+
+Amazon.com
+
+------=_Part_2075529_143360981.1791300041204
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Amazon.com</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<table role=3D"presentation" width=3D"100%"><tr>
+<td><a href=3D"https://www.amazon.com/gp/css/order-history?ref_=3Dfed_yo_defa=
+ult">Your Orders</a></td>
+<td><a href=3D"https://www.amazon.com/your-account?ref_=3Dfed_ya_default">You=
+r Account</a></td>
+<td><a href=3D"https://www.amazon.com/gp/buyagain?ref_=3Dfed_bia_default">Buy=
+ Again</a></td>
+</tr></table>
+<h2>Jane, there's a delay with your order.</h2>
+<table role=3D"presentation" class=3D"shipment"><tr><td>
+<h3>We're sorry. The item below is taking longer to ship than expected.</h3>
+<p class=3D"items">1 item: Wireless Mouse</p>
+<p class=3D"address">Jane - SPRINGFIELD, IL</p>
+<p>Order #</p><p class=3D"order-id">116-2058813-4471920</p>
+<p><a class=3D"button" href=3D"https://www.amazon.com/your-orders/order-detai=
+ls?orderID=3D116-2058813-4471920&amp;ref_=3Dp_btn_fed_veo">View or edit order=
+</a></p>
+</td></tr></table>
+<ul><li>Wireless Mouse</li></ul>
+<p>We'll email you when it ships.</p>
+<p class=3D"footer">=C2=A92026 Amazon.com, Inc. or its affiliates. Amazon and=
+ all related marks are trademarks of Amazon.com, Inc. or its affiliates, Amaz=
+on.com, Inc. 410 Terry Avenue N., Seattle, WA 98109.</p>
+
+</body>
+</html>
+
+------=_Part_2075529_143360981.1791300041204--

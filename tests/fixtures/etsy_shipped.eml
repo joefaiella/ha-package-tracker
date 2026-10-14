@@ -1,0 +1,36 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@account.etsy.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@account.etsy.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@account.etsy.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@account.etsy.com; dmarc=pass (p=REJECT sp=REJECT
+ dis=NONE) header.from=account.etsy.com
+Date: Mon, 05 Oct 2026 16:34:52 +0000
+From: Etsy <no-reply@account.etsy.com>
+To: jane.doe@example.com
+Message-ID: <969123efff3e9caa.376edad8ca59@account.etsy.com>
+Subject: Your Etsy order is on the way (Receipt #4102938475)
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Your order is on the way =E2=80=93 let the countdown begin
+
+Etsy
+
+Your order from Maple Leaf Prints is on the way!
+
+Order
+#4102938475
+
+Botanical Print Set, 8x10
+
+Shipping to
+Jane Doe
+123 Main St. Springfield
+
+Track your package for the latest updates.
+https://www.etsy.com/your/purchases/4102938475?ref=3Dshipping_notification
+
+Etsy, Inc.
+117 Adams Street, Brooklyn, NY 11201

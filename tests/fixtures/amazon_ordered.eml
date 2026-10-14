@@ -1,0 +1,135 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@amazon.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@amazon.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@amazon.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@amazon.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE)
+ header.from=amazon.com
+Date: Thu, 08 Oct 2026 05:48:17 +0000
+From: "Amazon.com" <auto-confirm@amazon.com>
+To: jane.doe@example.com
+Message-ID: <2780a62d732f30f0.b2b940e8d85b@amazon.com>
+Subject: Ordered 3 items: Kitchen
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="----=_Part_2210487_1180344721.1791438497122"
+
+------=_Part_2210487_1180344721.1791438497122
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Your Orders
+https://www.amazon.com/gp/css/order-history?ref_=3Dfed_yo_default
+
+Your Account
+https://www.amazon.com/your-account?ref_=3Dfed_ya_default
+
+Buy Again
+https://www.amazon.com/gp/buyagain?ref_=3Dfed_bia_default
+
+
+    Jane, thanks for your order!
+Ordered
+
+Shipped
+
+Out for delivery
+
+Delivered
+
+Arriving tomorrow
+
+
+
+Max - SHELBYVILLE, IL
+
+Order #
+112-3094415-2208734
+
+
+
+View or edit order
+https://www.amazon.com/your-orders/order-details?orderID=3D112-3094415-220873=
+4&ref_=3Dp_btn_fed_veo
+
+
+Arriving Saturday
+
+
+
+Max - SHELBYVILLE, IL
+
+Order #
+112-3094415-2208734
+
+
+
+View or edit order
+https://www.amazon.com/your-orders/order-details?orderID=3D112-3094415-220873=
+4&ref_=3Dp_btn_fed_veo
+
+Grand Total:
+42.97 USD
+
+
+=C2=A92026 Amazon.com, Inc. or its affiliates. Amazon and all related marks a=
+re trademarks of Amazon.com, Inc. or its affiliates, Amazon.com, Inc. 410 Ter=
+ry Avenue N., Seattle, WA 98109.
+
+Privacy Notice https://www.amazon.com/gp/help/customer/display.html?nodeId=3D=
+468496
+
+Amazon.com
+
+------=_Part_2210487_1180344721.1791438497122
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Amazon.com</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<table role=3D"presentation" width=3D"100%"><tr>
+<td><a href=3D"https://www.amazon.com/gp/css/order-history?ref_=3Dfed_yo_defa=
+ult">Your Orders</a></td>
+<td><a href=3D"https://www.amazon.com/your-account?ref_=3Dfed_ya_default">You=
+r Account</a></td>
+<td><a href=3D"https://www.amazon.com/gp/buyagain?ref_=3Dfed_bia_default">Buy=
+ Again</a></td>
+</tr></table>
+<h2>Jane, thanks for your order!</h2>
+<table role=3D"presentation" class=3D"progress"><tr><td>Ordered</td><td>Shipp=
+ed</td><td>Out for delivery</td><td>Delivered</td></tr></table>
+<table role=3D"presentation" class=3D"shipment"><tr><td>
+<h3>Arriving tomorrow</h3>
+<p class=3D"items">1 item: Kitchen</p>
+<p class=3D"address">Max - SHELBYVILLE, IL</p>
+<p>Order #</p><p class=3D"order-id">112-3094415-2208734</p>
+<p><a class=3D"button" href=3D"https://www.amazon.com/your-orders/order-detai=
+ls?orderID=3D112-3094415-2208734&amp;ref_=3Dp_btn_fed_veo">View or edit order=
+</a></p>
+</td></tr></table>
+<table role=3D"presentation" class=3D"shipment"><tr><td>
+<h3>Arriving Saturday</h3>
+<p class=3D"items">2 items: Kitchen</p>
+<p class=3D"address">Max - SHELBYVILLE, IL</p>
+<p>Order #</p><p class=3D"order-id">112-3094415-2208734</p>
+<p><a class=3D"button" href=3D"https://www.amazon.com/your-orders/order-detai=
+ls?orderID=3D112-3094415-2208734&amp;ref_=3Dp_btn_fed_veo">View or edit order=
+</a></p>
+</td></tr></table>
+<p>Grand Total: 42.97 USD</p>
+<p class=3D"footer">=C2=A92026 Amazon.com, Inc. or its affiliates. Amazon and=
+ all related marks are trademarks of Amazon.com, Inc. or its affiliates, Amaz=
+on.com, Inc. 410 Terry Avenue N., Seattle, WA 98109.</p>
+
+</body>
+</html>
+
+------=_Part_2210487_1180344721.1791438497122--

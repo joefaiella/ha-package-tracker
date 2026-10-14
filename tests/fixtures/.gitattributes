@@ -1,0 +1,2 @@
+# Keep the emails byte-for-byte as mail servers send them (CRLF line endings).
+*.eml -text

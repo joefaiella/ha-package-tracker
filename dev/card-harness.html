@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Package tracker card preview</title>
+<!--
+  Preview the bundled card outside Home Assistant with made-up packages.
+    python -m http.server 8799 --bind 127.0.0.1 --directory <repo root>
+    http://127.0.0.1:8799/dev/card-harness.html
+  Options: ?theme=dark, ?width=360, ?state=loading|empty|error|markup,
+           ?filter=arriving_today|on_the_way|delivered_today (presses that tile)
+  Link clicks are logged below instead of opening (add ?open=1 to really open them).
+-->
+<style>
+  :root {
+    --primary-color: #009ac7; --primary-text-color: #141414; --secondary-text-color: #5e5e5e;
+    --divider-color: rgba(0, 0, 0, .12); --card-background-color: #fff; --primary-background-color: #fafafa;
+    --amber-color: #ffc107; --blue-color: #2196f3; --green-color: #4caf50; --indigo-color: #3f51b5;
+    --error-color: #db4437; --warning-color: #ffa600; --ha-card-border-radius: 12px;
+    color-scheme: light;
+  }
+  :root[data-theme="dark"] {
+    --primary-text-color: #e1e1e1; --secondary-text-color: #9b9b9b; --divider-color: rgba(225, 225, 225, .12);
+    --card-background-color: #1c1c1c; --primary-background-color: #111;
+    color-scheme: dark;
+  }
+  body { margin: 0; padding: 16px; background: var(--primary-background-color); font-family: Roboto, "Segoe UI", sans-serif; }
+  #host { max-width: var(--w, 492px); }
+  #log { margin-top: 16px; font: 12px/1.5 monospace; color: var(--secondary-text-color); white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<div id="host"></div>
+<div id="log"></div>
+<script type="module">
+  const q = new URLSearchParams(location.search);
+  if (q.get("theme") === "dark") document.documentElement.dataset.theme = "dark";
+  if (q.get("width")) document.documentElement.style.setProperty("--w", `${q.get("width")}px`);
+  const log = (m) => { document.getElementById("log").textContent += `${m}\n`; };
+
+  // The card registers once Home Assistant's app has defined <home-assistant>; stand in for it here.
+  customElements.define("home-assistant", class extends HTMLElement {});
+  // Stand-in for HA's ha-icon, with the card's icons from Material Design Icons (Apache-2.0).
+  const ICONS = {
+    "mdi:truck-delivery": "M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z",
+    "mdi:package-variant": "M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z",
+    "mdi:package-variant-closed-check": "M12 2C11.8 2 11.6 2.1 11.4 2.2L3.5 6.6C3.2 6.8 3 7.1 3 7.5V16.5C3 16.9 3.2 17.2 3.5 17.4L11.4 21.8C11.6 21.9 11.8 22 12 22S12.4 21.9 12.6 21.8L13.5 21.3C13.2 20.7 13.1 20 13 19.3V12.6L19 9.2V13C19.7 13 20.4 13.1 21 13.3V7.5C21 7.1 20.8 6.8 20.5 6.6L12.6 2.2C12.4 2.1 12.2 2 12 2M12 4.2L18 7.5L16 8.6L10.1 5.2L12 4.2M8.1 6.3L14 9.8L12 10.9L6 7.5L8.1 6.3M5 9.2L11 12.6V19.3L5 15.9V9.2M21.3 15.8L17.7 19.4L16.1 17.8L15 19L17.8 22L22.6 17.2L21.3 15.8Z",
+    "mdi:mailbox-open-up": "M8,4A5,5 0 0,0 3,9V18H1V20H21A2,2 0 0,0 23,18V9A5,5 0 0,0 18,4H8M8,6A3,3 0 0,1 11,9V18H5V9A3,3 0 0,1 8,6M13,13V7H17V9H15V13H13Z",
+    "mdi:email-outline": "M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z",
+    "mdi:check": "M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z",
+  };
+  customElements.define("ha-icon", class extends HTMLElement {
+    connectedCallback() {
+      const path = ICONS[this.getAttribute("icon")] ?? "M12,5A7,7 0 1,0 12,19A7,7 0 1,0 12,5Z";
+      const size = "var(--mdc-icon-size, 24px)";
+      this.innerHTML = `<svg viewBox="0 0 24 24" style="width:${size};height:${size};display:block" fill="currentColor"><path d="${path}"/></svg>`;
+    }
+  });
+
+  const payload = {
+    loaded: true, as_of: "2026-10-09", mail_today: 3, hidden: 5, last_check: "2026-10-09T11:00:00-05:00", last_error: null,
+    counts: { arriving_today: 2, on_the_way: 4, delivered_today: 2, ordered: 2 },
+    packages: [
+      { id: "t:9400100000000000000001", item: "package from Northwind Books", carrier: "USPS", status: "out for delivery",
+        status_code: 50, expected: "2026-10-09", window: "between 10:30am and 12:30pm", late: false,
+        url: "https://tools.usps.com/go/TrackConfirmAction?tLabels=9400100000000000000001",
+        email_url: "https://mail.google.com/mail/u/?authuser=jane%40example.com#all/18f0000000000001",
+        groups: ["arriving_today", "on_the_way"], done: false, ticked: false },
+      { id: "t:123456789012", item: "package from Contoso Outdoors", carrier: "FedEx", status: "out for delivery",
+        status_code: 50, expected: "2026-10-09", window: "between 2:00pm and 6:00pm", late: false,
+        url: "https://www.fedex.com/fedextrack/?trknbr=123456789012", email_url: null,
+        groups: ["arriving_today", "on_the_way"], done: false, ticked: false },
+      { id: "t:9400100000000000000002", item: "USPS package", carrier: "USPS", status: "in transit", status_code: 30,
+        expected: "2026-10-07", late: true, exception: "delivery exception",
+        url: "https://tools.usps.com/go/TrackConfirmAction?tLabels=9400100000000000000002", groups: ["on_the_way"],
+        done: false, ticked: false },
+      { id: "s:BOX1", item: "Desk lamp", carrier: "Amazon", status: "in transit", status_code: 30, expected: "2026-10-10",
+        url: "https://www.amazon.com/progress-tracker/package?orderId=113-1234567-1234567&shipmentId=BOX1&packageIndex=0",
+        groups: ["on_the_way"], done: false, ticked: false },
+      { id: "o:113-7654321-7654321", item: "Kitchen supplies", carrier: "Amazon", status: "ordered", status_code: 10,
+        expected: "2026-10-12", expected_end: "2026-10-14",
+        url: "https://www.amazon.com/your-orders/order-details?orderID=113-7654321-7654321", groups: ["ordered"],
+        done: false, ticked: false },
+      { id: "o:shopify-x-1042", item: "order from Acme & Co", carrier: "Store", status: "ordered", status_code: 10,
+        url: "https://mail.google.com/mail/u/?authuser=jane%40example.com#all/18f0000000000002", groups: ["ordered"],
+        done: false, ticked: false },
+      { id: "s:BOX2", item: "Phone case", carrier: "Amazon", status: "delivered", status_code: 70,
+        delivered_at: "2026-10-09T13:05-05:00", url: null, groups: ["delivered_today"], done: true, ticked: false,
+        can_tick: false },
+      { id: "t:1Z999AA10123456784", item: "Running shoes", carrier: "UPS", status: "delivered", status_code: 70,
+        delivered_at: "2026-10-09T09:12-05:00", url: "https://www.ups.com/track?loc=en_US&tracknum=1Z999AA10123456784",
+        groups: ["delivered_today"], done: true, ticked: true },
+    ],
+  };
+  const state = q.get("state");
+  if (state === "markup") {
+    // Email text must render as text, never as HTML.
+    payload.packages[5].item = 'order from <b>Acme</b> & Co <img src=x onerror="alert(1)">';
+  }
+  const subs = new Set();
+  const push = () => subs.forEach((cb) => cb(structuredClone(payload)));
+  const hass = {
+    language: "en", locale: { language: "en" }, config: { time_zone: "America/Chicago" }, themes: { darkMode: false },
+    connection: {
+      subscribeMessage(cb) {
+        if (state === "error") return Promise.reject(Object.assign(new Error("Unauthorized"), { code: "unauthorized" }));
+        if (state !== "loading") {
+          subs.add(cb);
+          queueMicrotask(() => cb(state === "empty" ? { ...structuredClone(payload), packages: [],
+            counts: { arriving_today: 0, on_the_way: 0, delivered_today: 0 }, mail_today: null } : structuredClone(payload)));
+        }
+        return Promise.resolve(async () => subs.delete(cb));
+      },
+    },
+    async callWS(msg) {
+      log(`callWS ${JSON.stringify(msg)}`);
+      const p = payload.packages.find((x) => x.id === msg.package);
+      if (p) {
+        p.done = msg.received; p.ticked = msg.received; p.status_code = msg.received ? 70 : 30;
+        p.groups = msg.received ? ["delivered_today"] : ["on_the_way"];
+      }
+      setTimeout(push, 50);
+      return null;
+    },
+  };
+  document.addEventListener("hass-notification", (e) => log(`toast: ${e.detail.message}`));
+
+  await import(`../custom_components/package_tracker/frontend/package-tracker-card.js?t=${Date.now()}`);
+  await customElements.whenDefined("package-tracker-card");
+  const card = document.createElement("package-tracker-card");
+  card.setConfig({ type: "custom:package-tracker-card" });
+  document.getElementById("host").append(card);
+  card.hass = hass;
+  // Log link clicks instead of leaving the page (the card's shadow DOM is open).
+  if (!q.get("open")) {
+    card.shadowRoot.addEventListener("click", (e) => {
+      const a = e.target.closest("a[href]");
+      if (a) { e.preventDefault(); log(`open ${a.href}`); }
+    }, true);
+  }
+  if (q.get("filter")) {
+    await new Promise((resolve) => setTimeout(resolve));
+    card.shadowRoot.querySelector(`button[data-filter="${q.get("filter")}"]`)?.click();
+  }
+  window.card = card;
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@ups.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@ups.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@ups.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@ups.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE)
+ header.from=ups.com
+Date: Fri, 09 Oct 2026 09:05:31 -0400
+From: UPS <mcinfo@ups.com>
+To: jane.doe@example.com
+Message-ID: <48130b621c1cd351.0811d47052b4@ups.com>
+Subject: UPS Update: Package Scheduled for Delivery Today
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>UPS</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<table role=3D"presentation" width=3D"100%">
+<tr><td>Hi Jane,</td></tr>
+<tr><td>Your package is arriving today.</td></tr>
+<tr><td>From NORTHWIND TRADERS</td></tr>
+<tr><td>Scheduled Delivery</td></tr>
+<tr><td>Friday 10/09/2026</td></tr>
+<tr><td>2:00 PM - 6:00 PM</td></tr>
+<tr><td>Track Your Package</td></tr>
+<tr><td>Ship To</td></tr>
+<tr><td>123 MAIN ST</td></tr>
+<tr><td>SPRINGFIELD, IL 62701</td></tr>
+<tr><td>US</td></tr>
+<tr><td>UPS Ground</td></tr>
+<tr><td><a href=3D"https://www.ups.com/track?loc=3Den_US&amp;tracknum=3D1ZA81=
+F270312345675&amp;requester=3DST/trackdetails">1ZA81F270312345675</a></td></t=
+r>
+</table>
+<p>=C2=A92026 United Parcel Service of America, Inc. UPS, the UPS brandmark, =
+and the color brown are trademarks of United Parcel Service of America, Inc. =
+All rights reserved.</p>
+<p>Please do not reply to this email.</p>
+
+</body>
+</html>

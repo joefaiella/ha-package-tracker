@@ -1,0 +1,32 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@fedex.com>
+Authentication-Results: mx.google.com; dkim=fail header.i=@fedex.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=softfail (google.com: domain of
+ bounces@fedex.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@fedex.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE)
+ header.from=fedex.com
+Date: Thu, 08 Oct 2026 08:12:00 +0000
+From: FedEx <TrackingUpdates@fedex.com>
+To: jane.doe@example.com
+Message-ID: <0c083c7a64e690ea.14857531833f@fedex.com>
+Subject: Your package has been delivered 771933188065
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>FedEx</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<p>Your package could not be left at your address.</p>
+<p>Tracking number: 771933188065</p>
+<p><a href=3D"https://fedex-redelivery.example/pay">Pay the $1.99 redelivery =
+fee</a></p>
+
+</body>
+</html>

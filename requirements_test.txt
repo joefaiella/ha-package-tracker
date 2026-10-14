@@ -1,0 +1,12 @@
+# Home Assistant 2026.10.0 and its pytest plugin (pins pytest, pytest-asyncio and friends)
+pytest-homeassistant-custom-component==0.13.371
+
+# The integration's own requirement (manifest.json)
+aioimaplib==2.0.1
+
+# Requirements of Home Assistant's conversation component, which the voice assistant tests load
+gazetteer-matcher==1.1.0
+hassil==3.12.1
+home-assistant-intents==2026.10.6
+
+ruff==0.17.0

@@ -1,0 +1,49 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@t.shopifyemail.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@t.shopifyemail.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@t.shopifyemail.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@t.shopifyemail.com; dmarc=pass (p=REJECT sp=REJECT
+ dis=NONE) header.from=t.shopifyemail.com
+Date: Wed, 07 Oct 2026 19:10:44 +0000
+From: Juniper Home Goods <store+48291037@t.shopifyemail.com>
+To: jane.doe@example.com
+Message-ID: <b5b39c6b547a93fe.8451eee9dfb1@t.shopifyemail.com>
+Subject: A shipment from order #1042 is on the way
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Juniper Home Goods</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<table role=3D"presentation" width=3D"100%">
+<tr><td><h2>Juniper Home Goods</h2></td></tr>
+<tr><td>Order #1042</td></tr>
+<tr><td><h2>Your order is on the way</h2></td></tr>
+<tr><td>Your order is on the way. Track your shipment to see the delivery sta=
+tus.</td></tr>
+<tr><td><a href=3D"https://juniperhome.example/account/orders/1042">View your=
+ order</a></td></tr>
+<tr><td>USPS tracking number: <a href=3D"https://tools.usps.com/go/TrackConfi=
+rmAction?tLabels=3D9405511899223301205757">9405511899223301205757</a></td></t=
+r>
+<tr><td><h3>Items in this shipment</h3></td></tr>
+<tr><td>Linen Throw Pillow =C3=97 2</td></tr>
+<tr><td><h4>Shipping address</h4></td></tr>
+<tr><td>Jane Doe<br>123 Main St<br>Springfield IL 62701<br>United States</td>=
+</tr>
+<tr><td><h4>Billing address</h4></td></tr>
+<tr><td>Jane Doe<br>PO Box 77<br>Springfield IL 62705<br>United States</td></=
+tr>
+<tr><td>If you have any questions, reply to this email.</td></tr>
+</table>
+
+</body>
+</html>

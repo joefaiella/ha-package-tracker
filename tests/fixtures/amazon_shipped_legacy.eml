@@ -1,0 +1,81 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@amazon.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@amazon.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@amazon.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@amazon.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE)
+ header.from=amazon.com
+Date: Wed, 07 Oct 2026 14:12:09 +0000
+From: "Amazon.com" <shipment-tracking@amazon.com>
+To: jane.doe@example.com
+Message-ID: <a5a694006b53f488.35e23410ef50@amazon.com>
+Subject: Your Amazon.com order #117-6620481-3359024 has shipped
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="----=_Part_2160045_382204417.1791382329865"
+
+------=_Part_2160045_382204417.1791382329865
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Amazon Shipping Confirmation
+https://www.amazon.com?ie=UTF8&ref_=scr_home
+____________________________________________________________________
+
+Hi Jane, your package will arrive:
+
+Saturday, October 10
+
+Track your package:
+https://www.amazon.com/gp/your-account/ship-track?ie=UTF8&orderId=117-6620481-3359024&shipmentId=Ld4Wp7NzQ&packageIndex=0
+
+On the way:
+1 item
+Order #117-6620481-3359024
+
+* Garden Hose
+
+Ship to:
+Jane Doe
+SPRINGFIELD, IL
+
+Shipment total:
+$24.99
+
+Return or replace items in Your Orders
+https://www.amazon.com/gp/css/order-history?ie=UTF8&ref_=scr_yo
+____________________________________________________________________
+
+This email was sent from a notification-only address that cannot accept incoming email. Please do not reply to this message.
+
+------=_Part_2160045_382204417.1791382329865
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Amazon.com Shipping Confirmation</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<h1>Amazon Shipping Confirmation</h1>
+<p>Hi Jane, your package will arrive:</p>
+<p><b>Saturday, October 10</b></p>
+<p><a href=3D"https://www.amazon.com/gp/your-account/ship-track?ie=3DUTF8&amp=
+;orderId=3D117-6620481-3359024&amp;shipmentId=3DLd4Wp7NzQ&amp;packageIndex=3D=
+0">Track your package</a></p>
+<p>On the way: 1 item</p>
+<p>Order #117-6620481-3359024</p>
+<ul><li>Garden Hose</li></ul>
+<p>Ship to:</p>
+<p>Jane Doe<br>SPRINGFIELD, IL</p>
+<p>Shipment total: $24.99</p>
+
+</body>
+</html>
+
+------=_Part_2160045_382204417.1791382329865--

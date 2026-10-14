@@ -1,0 +1,46 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@tracking.usps.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@tracking.usps.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@tracking.usps.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@tracking.usps.com; dmarc=pass (p=REJECT sp=REJECT
+ dis=NONE) header.from=tracking.usps.com
+Date: Tue, 06 Oct 2026 13:12:38 +0000
+From: USPS Tracking <auto-reply@tracking.usps.com>
+To: jane.doe@example.com
+Message-ID: <35d9acb394a4aed6.a501d15e1196@tracking.usps.com>
+Subject: =?utf-8?q?USPS=C2=AE?= Expected Delivery on Tuesday, October 6, 2026
+ Between 10:30am and 12:30pm 9400111899223300644189
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>USPS Tracking</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</style>
+</head>
+<body>
+<table role="presentation" width="100%">
+<tr><td><p>Hello ,</p>
+</td></tr>
+<tr><td><p>Your item is out for delivery on October 6, 2026 at 7:35 am in SPRINGFIELD, IL 62701.</p>
+</td></tr>
+<tr><td><p>USPS expects to deliver your package today between 10:30am and 12:30pm.</p>
+</td></tr>
+<tr><td><p>Tracking Number: 9400111899223300644189</p>
+</td></tr>
+<tr><td><p>Package Shipped from: HARBOR TEA CO.</p>
+</td></tr>
+<tr><td><h3>Out for Delivery<br>Between 10:30am and 12:30pm</h3>
+</td></tr>
+</table>
+<p>Visit <a href="https://tools.usps.com/go/TrackConfirmAction">USPS Tracking®</a> to check the most up-to-date status of your package.</p>
+<p>This is an automated email; please do not reply to this message.</p>
+<p>Copyright ©2026 USPS. All Rights Reserved.</p>
+<p>475 L'Enfant Plaza SW, Washington, DC 20260</p>
+
+</body>
+</html>

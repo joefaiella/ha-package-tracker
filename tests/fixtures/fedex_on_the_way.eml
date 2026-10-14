@@ -1,0 +1,71 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@fedex.com>
+Authentication-Results: mx.google.com; dkim=pass header.i=@fedex.com
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@fedex.com designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@fedex.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE)
+ header.from=fedex.com
+Date: Wed, 07 Oct 2026 16:04:00 -0500
+From: FedEx Delivery Manager <TrackingUpdates@fedex.com>
+To: jane.doe@example.com
+Message-ID: <5e625c4678c0e3e0.d4bc4cd6f9ce@fedex.com>
+Subject: FedEx Shipment 398715620041273: Your package is on its way
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="----=_Part_79874_1028331784.1791407040311"
+
+------=_Part_79874_1028331784.1791407040311
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FedEx</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</style>
+</head>
+<body>
+<table role="presentation" width="100%">
+<tr><td>Hi, Jane. Your package from Harbor Tea Co. is on its way.</td></tr>
+<tr><td>SCHEDULED DELIVERY</td></tr>
+<tr><td>Mon, 10/12/2026</td></tr>
+<tr><td>TRACKING NUMBER</td></tr>
+<tr><td><a href="https://www.fedex.com/fedextrack/?trknbr=398715620041273">398715620041273</a></td></tr>
+<tr><td>FROM</td></tr>
+<tr><td>Harbor Tea Co.</td></tr>
+<tr><td>88 Wharf St</td></tr>
+<tr><td>Unit 2</td></tr>
+<tr><td>DECATUR, IL, US, 62521</td></tr>
+<tr><td>TO</td></tr>
+<tr><td>Jane</td></tr>
+<tr><td>Jane</td></tr>
+<tr><td>99999 STREET RD</td></tr>
+<tr><td>CITY, STATE, ZIP</td></tr>
+<tr><td>PURCHASE ORDER NUMBER</td></tr>
+<tr><td>55812</td></tr>
+<tr><td>REFERENCE</td></tr>
+<tr><td>HT-20931</td></tr>
+<tr><td>SHIP DATE</td></tr>
+<tr><td>Tue 10/06/2026 12:00 AM</td></tr>
+<tr><td>ORIGIN</td></tr>
+<tr><td>DECATUR, IL, US, 62521</td></tr>
+<tr><td>DESTINATION</td></tr>
+<tr><td>SPRINGFIELD, IL, US, 62701</td></tr>
+<tr><td>STANDARD TRANSIT</td></tr>
+<tr><td>Mon, 10/12/2026</td></tr>
+<tr><td>NUMBER OF PIECES</td></tr>
+<tr><td>1</td></tr>
+<tr><td>TOTAL SHIPMENT WEIGHT</td></tr>
+<tr><td>2.10 LB</td></tr>
+<tr><td>SERVICE TYPE</td></tr>
+<tr><td>FedEx Ground</td></tr>
+</table>
+<p>Please do not reply to this message. This email was sent from an unattended mailbox.</p>
+<p>All weights are estimated.</p>
+<p>© 2026 FedEx. All rights reserved.</p>
+
+</body>
+</html>
+
+------=_Part_79874_1028331784.1791407040311--

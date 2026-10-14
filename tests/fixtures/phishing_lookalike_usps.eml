@@ -1,0 +1,33 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@usps-parcel-help.example>
+Authentication-Results: mx.google.com; dkim=pass
+ header.i=@usps-parcel-help.example header.s=s2048 header.b=Q2xvdWQx; spf=pass
+ (google.com: domain of bounces@usps-parcel-help.example designates
+ 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@usps-parcel-help.example; dmarc=pass (p=REJECT
+ sp=REJECT dis=NONE) header.from=usps-parcel-help.example
+Date: Thu, 08 Oct 2026 09:30:00 +0000
+From: USPS Parcel Help <notice@usps-parcel-help.example>
+To: jane.doe@example.com
+Message-ID: <0eef59039184f250.fb49d25eb2a6@usps-parcel-help.example>
+Subject: Your package is on the way
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>USPS</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<p>Your package is on the way but the address is incomplete.</p>
+<p>USPS Tracking Number: 9400111899223300644189</p>
+<p><a href=3D"https://usps-parcel-help.example/update">Update your address</a=
+></p>
+
+</body>
+</html>

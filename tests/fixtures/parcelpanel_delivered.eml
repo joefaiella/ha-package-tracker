@@ -1,0 +1,39 @@
+Delivered-To: jane.doe@example.com
+Return-Path: <bounces@parcelpanel.net>
+Authentication-Results: mx.google.com; dkim=pass header.i=@parcelpanel.net
+ header.s=s2048 header.b=Q2xvdWQx; spf=pass (google.com: domain of
+ bounces@parcelpanel.net designates 203.0.113.25 as permitted sender)
+ smtp.mailfrom=bounces@parcelpanel.net; dmarc=pass (p=REJECT sp=REJECT
+ dis=NONE) header.from=parcelpanel.net
+Date: Thu, 08 Oct 2026 23:20:19 +0000
+From: Lakeside Tea Company <no-reply@parcelpanel.net>
+To: jane.doe@example.com
+Message-ID: <fb921d1214910ff8.01829f057eba@parcelpanel.net>
+Subject: A shipment from order #2087 has been delivered
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Lakeside Tea Company</title>
+<style>body{font-family:Arial,sans-serif;color:#0f1111} td{padding:4px 0}</st=
+yle>
+</head>
+<body>
+<table role=3D"presentation" width=3D"100%">
+<tr><td>Order #2087</td></tr>
+<tr><td><h2>The last item in your order has been delivered</h2></td></tr>
+<tr><td>Something wrong with your delivery? Let us know</td></tr>
+<tr><td><a href=3D"https://lakesidetea.example/apps/parcelpanel?nums=3D208=
+7">View your order</a></td></tr>
+<tr><td>UPS tracking number: 1ZW4X9810377702465</td></tr>
+<tr><td><h3>Items in this shipment</h3></td></tr>
+<tr><td>Loose Leaf Sampler =C3=97 2</td></tr>
+<tr><td>Ship to: Jane Doe, 123 Main St. Springfield</td></tr>
+</table>
+
+</body>
+</html>
